@@ -12,7 +12,7 @@ body{
 
 /* Header */
 .header{
-    background-color: aqua;
+    background-color: white;
     grid-column: 2;
     grid-area: 1 / 2 / 2 / -1;
     display: grid;
@@ -85,10 +85,18 @@ body{
     gap: 0.5rem;
 }
 
+.main-links img{
+    height: 2rem;
+}
+
+.support-links img{
+    height: 2rem;
+}
+
 
 /* Main Content*/
 .content{
-    background-color: crimson;
+    background-color: lightslategray;
     display: grid;
     grid-template-columns: 3fr 1fr;
     padding: 1rem 2rem;
@@ -137,6 +145,10 @@ body{
     padding: 1rem;
 }
 
+.actions img{
+    height: 2rem;
+}
+
 /*Announcement/Trend Bar*/
 .announce-trend{
     display: grid;
@@ -178,4 +190,12 @@ body{
     display: flex;
     align-items: center;
     gap: 1rem;
+}
+
+.trend img{
+    height: 3rem;
+}
+
+.profile img{
+    height: 2rem;
 }
