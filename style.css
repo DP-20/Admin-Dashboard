@@ -2,6 +2,9 @@ body{
     margin: 0;
     padding: 0;
 }
+*{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
 
 .main{
     display: grid;
@@ -30,12 +33,32 @@ body{
     flex: 1;
 }
 
+.search-bar img{
+    height: 2rem;
+}
+
+.s-button{
+    border-radius: 15px;
+    border: none;
+    background-color: #e2e8f0;
+    
+}
+
 .profile{
     grid-area: 1 / 2 / 2 / 3;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 1rem;
+}
+.profile img{
+    height: 2rem;
+    border-radius: 50%;
+    
+}
+
+.yugi{
+    background-color: rgb(149, 95, 199);
 }
 
 .intro{
@@ -50,6 +73,13 @@ body{
     width: 5rem;
     justify-self: end;
     align-self: center;
+    border-radius: 50%;
+    background-color: rgb(149, 95, 199);
+}
+
+.intro p{
+    font-size: large;
+    font-weight: bolder;
 }
 
 .nav{
@@ -59,10 +89,21 @@ body{
     gap: 2rem;
 }
 
+.headerBtn{
+    border-radius: 15px;
+    background-color: rgb(149, 95, 199);
+    cursor: pointer;
+    color: white;
+    border: none;
+    width: 6rem;
+    height: 2rem;
+    font-weight: bold;
+}
+
 
 /* Sidebar */
 .dashboard{
-    background-color: blueviolet;
+    background-color: rgb(149, 95, 199);
     grid-area: 1 / 1 / -1 / 2;
     grid-template-rows: auto auto 1fr;
 }
@@ -93,14 +134,25 @@ body{
     height: 2rem;
 }
 
+.dashboard p{
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.dashboard p:hover{
+    font-size: 20px;
+    transition: 0.2s;
+}
+
 
 /* Main Content*/
 .content{
-    background-color: lightslategray;
+    background-color: #e2e8f0;
     display: grid;
     grid-template-columns: 3fr 1fr;
     padding: 1rem 2rem;
     gap: 1rem;
+    box-shadow: inset 0 5px 5px rgb(197, 197, 197);
 }
 
 .projects{
@@ -121,6 +173,13 @@ body{
     grid-template: 1fr auto / 1rem 1fr;
     background-color: white;
     height: 300px;
+    border-radius: 5%;
+}
+
+.project:hover{
+    box-shadow: 0 0 3px 1px black;
+    transition: 0.3s;
+    transform: scale(1.01);
 }
 
 .project .color-block{
@@ -168,6 +227,18 @@ body{
     align-items: flex-start;
     padding: 1rem 2rem;
     justify-content: space-around;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.announce-content p{
+    font-size: 12px;
+}
+
+.announ-border{
+    width: 100%;
+    height: 1px;
+    background-color: black;
 }
 
 .trending{
@@ -184,6 +255,8 @@ body{
     align-items: flex-start;
     justify-content: space-around;
     padding: 1rem 2rem;
+    background-color: white;
+    border-radius: 20px;
 }
 
 .trend{
@@ -194,8 +267,18 @@ body{
 
 .trend img{
     height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
 }
 
-.profile img{
-    height: 2rem;
+.trend p{
+    display: flex;
+    flex-direction: column;
 }
+
+.trend p .handle{
+    font-weight: bolder;
+}
+
+
+
